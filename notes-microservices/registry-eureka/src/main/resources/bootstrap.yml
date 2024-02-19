@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: registry-eureka
+    #    ?Перенаправление на конфиг-сервер с настройками
+  cloud:
+    config:
+      uri: http://localhost:8001
+      fail-fast: true
+      password: admin
+      username: user
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    peer-node-read-timeout-ms: 100000

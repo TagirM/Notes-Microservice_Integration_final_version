@@ -1,0 +1,17 @@
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.product-link {
+    color: #000 !important;
+    text-decoration: none
+}
+
+/*.cards-box-char{*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-image: url('/image/background.jpg');*/
+/*    background-size: cover;*/
+/*    padding-bottom: 400px;*/
+/*}*/

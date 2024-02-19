@@ -1,0 +1,6 @@
+server:
+  port: 8082
+
+spring:
+  freemarker:
+    expose-request-attributes: true

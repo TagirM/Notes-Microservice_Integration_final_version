@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: notes-service
+    #    Перенаправление на конфиг-сервер с настройками
+  cloud:
+    config:
+      uri: http://localhost:8001
+      fail-fast: true
+      password: admin
+      username: user
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - prometheus
+          - info
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: notes-app
+
+
+
+#management.endpoints.web.exposure.include=loggers
+#management.endpoints.web.exposure.include=env, info, health
+#management.endpoints.web.exposure.include=*
+
